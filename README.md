@@ -107,7 +107,7 @@ docker run -d -p 56733:80 --name=$app -v $location $app
 - Creates a variable called `$app` and assigns the string `docker.test`
   
 `$location = $PWD.ToString() + ':\app'`
-- Created a variable called `$location` and assigns the current directory plus `:app`.
+- Created a variable called `$location` and assigns the current directory plus `:\app`.
 - Example: `$location` is equal to `C:\Users\YourName\flask_docker_blog_post\var\www\HelloWorldApp\:app`
 
 `docker build -t $app .`
